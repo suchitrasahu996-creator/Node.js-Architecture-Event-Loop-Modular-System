@@ -1,0 +1,7 @@
+Explain the following in detail.
+Node.js Architecture
+ANS:- Node.js architecture is the built on an event driven ,non-blocking architecture  that allows it to handle a large number of concurrent connections efficiently .Instead of the creating the new thread for every request ,node.js uses the single-threaded event loop with background workers for expensive tasks.The high-level architecture is built on the core components that works together to manage the application flow .Those components are V8 Javascript Engine,Libuv Library ,Event Loop,Thread Pool,Node.js standard library and binding.
+The V8 Engine  is a critical component that compiles javascript code into optimized machine code ,allowing it to be executed at high speed outside of a browser.The Libuv library its manages the event loop  and the thread pool,providing node.js access to the underlying operating system's functionalities ,such as the file system and networking.The event loop runs on a single main thread .It continuously checks the event queue for incoming requests and events.A collection of separate ,background threads  managed by libuv.These threads excute the heavy or blocking  operation off the main thread .Once a task is complete, than callback is returned to the event loop.The node.js standard library and blinding this layer provides exposed the javascript APIs for developers to interact with core system-level functionalities.whish was ultimately interface with libuv.
+
+
+

@@ -16,4 +16,6 @@ export function checkPrime(number){
         }
     }
     return true;
+
+    
 }
